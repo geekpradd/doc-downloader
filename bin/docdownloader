@@ -1,0 +1,28 @@
+#!/usr/bin/python
+# coding: utf-8
+__author__ = 'Pradipta'
+import argparse
+import os
+
+from DocDownloader import DocDownloader
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('url',help="URL of the documentation hosted by ReadTheDocs")
+    parser.add_argument('-f','--format',help="Format of Documentation to download in. Values supported are 'html' and 'pdf'")
+    parser.add_argument('-d','--directory',help='Directory to download in. Optional.')
+    args=parser.parse_args()
+    if args.directory:
+        path=os.path.expanduser(args.directory)
+        if os.path.isdir(path):
+            os.chdir(path)
+    url=args.url
+    if not args.format:
+        obj=DocDownloader(url,'html')
+    else:
+        obj=DocDownloader(url,args.format)
+
+    obj.download()
+if __name__=='__main__':
+    main()

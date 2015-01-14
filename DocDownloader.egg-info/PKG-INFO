@@ -1,0 +1,97 @@
+Metadata-Version: 1.1
+Name: DocDownloader
+Version: 1.2.5
+Summary: Downloads Documentation from ReadTheDocs in multiple formats
+Home-page: https://github.com/geekpradd/doc-downloader
+Author: Pradipta Bora
+Author-email: pradd@outlook.com
+License: MIT
+Description: DocDownloader - Download Docs from ReadTheDocs
+        ==============================================
+        
+        |License| |Development Status|
+        
+        DocDownloader is a python 2/3 module/utility to download Documenation
+        hosted on ReadTheDocs in HTML, PDF and EPUB Formats
+        
+        It can be used from the terminal or by using the API.
+        
+        Installation
+        ------------
+        
+        Installing is simple, just enter this command:
+        
+        ::
+        
+            pip install DocDownloader
+        
+        You need to have pip installed to run this command
+        
+        Usage
+        -----
+        
+        Just run the following command:
+        
+        ::
+        
+            docdownloader [-f format] [-d directory] url/package name
+        
+        For example,
+        
+        ::
+        
+            docdownloader -f HTML flask
+        
+        or
+        
+        ::
+        
+            docdownloader -f epub http://scrapy.readthedocs.org/en/latest/
+        
+        API Usage
+        ---------
+        
+        You can use the module from python also. Example code:
+        
+        .. code:: python
+        
+            from DocDownloader import DocDownloader
+            DocDwn=DocDownloader('flask','pdf')
+            DocDwn.download()
+        
+        Dependencies
+        ------------
+        
+        1. requests
+        2. BeautifulSoup4
+        3. wget (the python module)
+        
+        Features
+        --------
+        
+        1. Download docs in HTML, EPUB and PDF Formats
+        2. Automatic Server setup using http.server/SimpleHttpServer by clicking
+           on a .bat file
+        
+        Note for Linux and Mac OSX Users
+        --------------------------------
+        
+        The Automatic server setup is currently for Windows only. It'l be ported
+        over soon (Once I learn some shell commands)
+        
+        About
+        -----
+        
+        Created By Pradipta aka geekpradd.
+        
+        .. |License| image:: https://pypip.in/license/DocDownloader/badge.svg
+           :target: https://pypi.python.org/pypi/DocDownloader/
+        .. |Development Status| image:: https://pypip.in/status/DocDownloader/badge.svg
+           :target: https://pypi.python.org/pypi/DocDownloader/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

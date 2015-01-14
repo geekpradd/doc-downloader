@@ -1,0 +1,10 @@
+setup.py
+DocDownloader/__init__.py
+DocDownloader/downloader.py
+DocDownloader.egg-info/PKG-INFO
+DocDownloader.egg-info/SOURCES.txt
+DocDownloader.egg-info/dependency_links.txt
+DocDownloader.egg-info/not-zip-safe
+DocDownloader.egg-info/requires.txt
+DocDownloader.egg-info/top_level.txt
+bin/docdownloader
