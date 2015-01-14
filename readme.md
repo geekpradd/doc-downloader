@@ -3,7 +3,7 @@
 [![License](https://pypip.in/license/DocDownloader/badge.svg)](https://pypi.python.org/pypi/DocDownloader/)
 [![Development Status](https://pypip.in/status/DocDownloader/badge.svg)](https://pypi.python.org/pypi/DocDownloader/)
 
-DocDownloader is a python 2/3 module/utility to download Documenation hosted on ReadTheDocs where most Python Module Docs are hosted  in HTML, PDF and EPUB Formats
+DocDownloader is a python 2/3 module/utility to download Documenation hosted on ReadTheDocs in HTML, PDF and EPUB Formats
 
 It can be used from the terminal or by using the API.
 

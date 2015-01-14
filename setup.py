@@ -1,12 +1,12 @@
 from setuptools import setup
-import DocDownloader as module
+
 try:
     import pypandoc
     description=pypandoc.convert('readme.md','rst')
 except:
     description=''
 setup(name='DocDownloader',
-      version=module.__version__,
+      version="1.3.2",
       description='Downloads Documentation from ReadTheDocs in multiple formats',
       long_description=description,
       url='https://github.com/geekpradd/doc-downloader',
