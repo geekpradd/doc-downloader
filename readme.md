@@ -1,7 +1,7 @@
 #DocDownloader - Download Docs from ReadTheDocs
 
-[![License](https://pypip.in/license/DocDownloader/badge.svg)](https://pypi.python.org/pypi/DocDownloader/)
-[![Development Status](https://pypip.in/status/DocDownloader/badge.svg)](https://pypi.python.org/pypi/DocDownloader/)
+[![License](https://img.shields.io/pypi/l/DocDownloader.svg)](https://pypi.python.org/pypi/DocDownloader/)
+[![Development Status](https://img.shields.io/pypi/status/DocDownloader.svg)](https://pypi.python.org/pypi/DocDownloader/)
 
 DocDownloader is a python 2/3 module/utility to download Documenation hosted on ReadTheDocs in HTML, PDF and EPUB Formats
 
